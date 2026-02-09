@@ -1,5 +1,7 @@
 # Attractor Demo
 
+[factory.strongdm.ai](https://factory.strongdm.ai)
+
 This demo runs a simple pipeline with a human gate.
 
 ## Run (simulated)

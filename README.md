@@ -1,5 +1,7 @@
 # Attractor
 
+[factory.strongdm.ai](https://factory.strongdm.ai)
+
 DOT-based pipeline runner for AI workflows. See the spec in the task description.
 
 ## Quick Start
