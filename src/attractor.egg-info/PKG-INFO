@@ -1,0 +1,40 @@
+Metadata-Version: 2.4
+Name: attractor
+Version: 0.1.0
+Summary: DOT-based pipeline runner for AI workflows
+Author: Attractor Contributors
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: coding-agent
+Requires-Dist: unified-llm
+
+# Attractor
+
+DOT-based pipeline runner for AI workflows. See the spec in the task description.
+
+## Quick Start
+
+```bash
+uv sync
+```
+
+```python
+from attractor import CodingAgentBackend, PipelineRunner, parse_dot
+
+DOT = """
+digraph Simple {
+    graph [goal="Run tests and report"]
+    start [shape=Mdiamond]
+    exit [shape=Msquare]
+    run_tests [label="Run Tests", prompt="Run tests"]
+    report [label="Report", prompt="Summarize results"]
+    start -> run_tests -> report -> exit
+}
+"""
+
+graph = parse_dot(DOT)
+backend = CodingAgentBackend(working_dir="/path/to/repo")
+runner = PipelineRunner(backend=backend)
+runner.run(graph)
+```

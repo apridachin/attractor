@@ -1,0 +1,11 @@
+{
+  "context_updates": {
+    "last_response": "Summary:\n- Verified that `demo/output/hello.py` prints `Hello, World!`.\u3010F:demo/output/hello.py\u2020L1\u3011\n\nTests: Not run (not requested).",
+    "last_stage": "implement"
+  },
+  "failure_reason": "",
+  "notes": "Stage completed: implement",
+  "outcome": "success",
+  "preferred_next_label": "",
+  "suggested_next_ids": []
+}

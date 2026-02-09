@@ -1,0 +1,35 @@
+{
+  "completed_nodes": [
+    "start",
+    "implement",
+    "review",
+    "gate"
+  ],
+  "context": {
+    "current_node": "gate",
+    "graph.goal": "Create a hello world Python script",
+    "human.gate.label": "[A] Approve",
+    "human.gate.selected": "A",
+    "internal.last_fidelity": "compact",
+    "internal.retry_count.gate": 0,
+    "internal.retry_count.implement": 0,
+    "internal.retry_count.review": 0,
+    "internal.retry_count.start": 0,
+    "last_response": "",
+    "last_stage": "review",
+    "outcome": "success",
+    "preferred_label": "",
+    "suggested_next_ids": [
+      "exit"
+    ]
+  },
+  "current_node": "gate",
+  "logs": [],
+  "node_retries": {
+    "gate": 0,
+    "implement": 0,
+    "review": 0,
+    "start": 0
+  },
+  "timestamp": "2026-02-10T12:34:44.358765+00:00"
+}

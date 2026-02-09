@@ -1,0 +1,15 @@
+digraph Demo {
+  graph [goal="Create a hello world Python script"]
+  rankdir=LR
+
+  start [shape=Mdiamond, label="Start"]
+  exit  [shape=Msquare, label="Exit"]
+
+  implement [label="Implement", prompt="Create a file hello.py that prints Hello, World! for: $goal", goal_gate=true]
+  review [label="Review", prompt="Review the code for correctness and style"]
+  gate [shape=hexagon, label="Ship it?", type="wait.human"]
+
+  start -> implement -> review -> gate
+  gate -> exit [label="[A] Approve"]
+  gate -> implement [label="[F] Fix"]
+}

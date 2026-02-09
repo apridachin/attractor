@@ -1,0 +1,11 @@
+{
+  "context_updates": {
+    "last_response": "",
+    "last_stage": "review"
+  },
+  "failure_reason": "",
+  "notes": "Stage completed: review",
+  "outcome": "success",
+  "preferred_next_label": "",
+  "suggested_next_ids": []
+}

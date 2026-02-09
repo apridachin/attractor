@@ -1,0 +1,13 @@
+{
+  "context_updates": {
+    "human.gate.label": "[A] Approve",
+    "human.gate.selected": "A"
+  },
+  "failure_reason": "",
+  "notes": "",
+  "outcome": "success",
+  "preferred_next_label": "",
+  "suggested_next_ids": [
+    "exit"
+  ]
+}
